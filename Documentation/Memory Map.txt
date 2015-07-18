@@ -1,0 +1,24 @@
+---------------
+ Linear Memory
+---------------
+
+0x1000 = 4096
+0x0400 = 1024
+0x0200 = 512
+0x0100 = 256
+
+ _______________
+|				|0x0000
+|				|
+|_______________|0x0500(KERNEL start,1.25 KB)
+|				|
+|_______________|0x4128(KERNEL end,1.25 KB)
+|				|
+|_______________|Bitmap end(128 bytes)
+|				|
+|_______________|Kernel Directory start(Page aligned)
+|				|
+|_______________|Kernel Directory end(Page aligned)
+|				|
+|_______________|0x7C00 (Bootloader start,31 KB)
+|_______________|0x7E00 (Bootloader end,31.5 KB)
